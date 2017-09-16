@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>CondominioSystem</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Estilo customizado para essa tela -->
+    <!-- <link href="index.css" rel="stylesheet"> -->
+  </head>
+
+  <body>
+
+    <!-- **** BARRA DE NAVEGAÇÃO **** -->
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+      <img src="assets/img/CondominioLogo.png" style="width:30px; height:auto" class="d-inline-block align-top">
+      <a class="navbar-brand" href="#">CondominioSystem</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#menu-sanduiche" aria-controls="menu-sanduiche" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="menu-sanduiche">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#myModal1">Nova Visita</button>
+          </li>
+          <li>
+            <form class="form-inline my-2 my-lg-0">
+              <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#myModal">Relatório de Visitas</button>
+            </form>
+          </li>
+          <!-- MODAL -->
+          <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+              <!-- CONTEÚDO DA MODAL -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Visitantes</h4>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Nome</th>
+                        <th>Cpf</th>
+                        <th>Data</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>John</td>
+                        <td>111.343.09-90</td>
+                        <td>12/10/2017</td>
+                      </tr>
+                      <tr>
+                        <td>Mary</td>
+                        <td>333.555.444-90</td>
+                        <td>13/10/2017</td>
+                      </tr>
+                      <tr>
+                        <td>July</td>
+                        <td>545.900.767-65</td>
+                        <td>14/10/2017</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL DE INSERCAO DOS DADOS-->
+          <div id="myModal1" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+              <!-- CONTEÚDO DA MODAL -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Inserindo novas Visitas</h4>
+                </div>
+                  <div class="form-control">
+                    <div class="form-group">
+                      <label for="txtNome">Nome</label>
+                      <input class="form-control" type="text" placeholder="Insira o nome do visitante...">
+                    </div>
+                    <div class="form-group">
+                      <label for="txtNome">Cpf</label>
+                      <input class="form-control" type="text" placeholder="Insira o cpf...">
+                    </div>
+                    <div class="form-group">
+                      <label for="txtNome">Data</label>
+                      <input class="form-control" type="date">
+                    </div>  
+                  </form>     
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal">Gravar</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3">CondominioSystem</h1>
+        <p class="lead">Protótipo de tela clicável de um sistema que controla as visitas de um condominio!</p>
+      </div>
+    </div>
+    <!-- **** Fim da barra de navegação **** -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/jquery-3.2.1.js"></script>
+    <script src="assets/js/tether.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+
+
+
+
+  </html>
