@@ -107,8 +107,8 @@
                   </form>     
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-success" data-dismiss="modal">Gravar</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" onclick="functionAlert()">Cancelar</button>
+                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="functionConfirm()">Gravar</button>
               </div>
               </div>
             </div>
@@ -133,8 +133,19 @@
     <script src="assets/js/tether.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
   </body>
+  
+<script>
+  
+function functionConfirm() {
+	confirm("Tem certeza que deseja salvar?");
+}
 
-
-
-
+function functionAlert() {
+	confirm("Cancelado com sucesso!");
+}
+  
+</script>
+  
   </html>
+  
+ 
